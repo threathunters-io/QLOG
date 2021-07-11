@@ -23,6 +23,21 @@ Sysmon does a great job, but we wanted to create a tool which is open source and
 Also, Sysmon is NOT SUPPORTED by Microsoft at all. So, if you run into problems in prod, you're at your own. Sure, QLOG doesn't have support either, 
 but it will be open sourced so we can fix issues with the power of the security community and develop new features based on the requirements of the community.
 
+# Usage & install
+To run in interactive console mode, just run
+```
+qlog.exe
+```
+To install / deinstall as Windows service, run:
+```
+#install service
+qlog.exe -i 
+
+#deinstall service
+qlog.exe -u 
+```
+
+
 # Do you want to contribute?
 Please see https://threathunters.io/ on how to join threathunters.io community.
 
