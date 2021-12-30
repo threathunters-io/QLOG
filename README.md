@@ -46,131 +46,77 @@ Please see https://threathunters.io/ on how to join threathunters.io community.
 # Example output of enriched PROCESS CREATE events
 ```
 {
-  "EventGuid": "68795fe8-67e7-410b-a5c0-8364746d7ffe",
-  "StartTime": "2021-07-11T11:06:56.9621746+02:00",
+  "EventGuid": "630699d6-ec7b-4e93-8ff8-ebd34a4c1646",
+  "StartTime": "2021-12-30T09:13:38.0867746+01:00",
   "QEventID": 100,
   "QType": "Process Create",
-  "Username": "TESTOS\\TESTUSER",
-  "Imagefilename": "TEAMS.EXE",
-  "KernelImagefilename": "TEAMS.EXE",
-  "OriginalFilename": "TEAMS.EXE",
-  "Fullpath": "C:\\Users\\TESTUSER\\AppData\\Local\\Microsoft\\Teams\\current\\Teams.exe",
-  "PID": 21740,
-  "Commandline": "\"C:\\Users\\TESTUSER\\AppData\\Local\\Microsoft\\Teams\\current\\Teams.exe\" --type=renderer --autoplay-policy=no-user-gesture-required --disable-background-timer-throttling --field-trial-handle=1668,499009601563875864,12511830007210419647,131072 --enable-features=WebComponentsV0Enabled --disable-features=CookiesWithoutSameSiteMustBeSecure,SameSiteByDefaultCookies,SpareRendererForSitePerProcess --lang=de --enable-wer --ms-teams-less-cors=522133263 --app-user-model-id=com.squirrel.Teams.Teams --app-path=\"C:\\Users\\jocke",
-  "Modulecount": 41,
-  "TTPHash": "42AC63285408F5FD91668B16F8E9157FD97046AB63E84117A14E31A188DDC62F",
-  "Imphash": "F14F00FA1D4C82B933279C1A28957252",
-  "sha256": "155625190ECAA90E596CB258A07382184DB738F6EDB626FEE4B9652FA4EC1CC2",
-  "md5": "9453BC2A9CC489505320312F4E6EC21E",
-  "sha1": "7219CB54AC535BA55BC1B202335A6291FDC2D76E",
-  "ProcessIntegrityLevel": "None",
+  "Username": "TESTPC\\TestUser",
+  "UsernameSID": "S-1-5-21-2182592019-244663482-1304351222-1001",
+  "Imagefilename": "NOTEPAD.EXE",
+  "KernelImagefilename": "NOTEPAD.EXE",
+  "OriginalFilename": "NOTEPAD.EXE",
+  "Fullpath": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_10.2103.6.0_x64__8wekyb3d8bbwe\\Notepad\\Notepad.exe",
+  "PID": 11272,
+  "Commandline": "\"C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_10.2103.6.0_x64__8wekyb3d8bbwe\\Notepad\\Notepad.exe\" ",
+  "Modulecount": 53,
+  "TTPHash": "9A0227AC826AA2D8CBA9FCB92AD1465D2ACF8ECE1EF004EA4F36BE6939F253E5",
+  "Imphash": "CA88689695B1E2B1E2A85FC73742E524",
+  "sha256": "DEB5B0067E4AF84BB07FA3D84631CEE94787FB3BE7CDA11C0016992F54AB4DDA",
+  "md5": "62F12AC2CE2C3E90C7D99809FF90AADA",
+  "sha1": "48C2E57A9B5BB4D7277A70DD6F0BEFBDF5B23B6C",
+  "ProcessIntegrityLevel": "Medium",
   "isOndisk": true,
   "isRunning": true,
-  "Signed": "Signature valid",
-  "AuthenticodeHash": "B8AD58EE5C35B3F80C026A318EEA34BABF6609C077CB3D45AEE69BF5C9CF8E11",
-  "Signatures": [
-    {
-      "Subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "Issuer": "CN=Microsoft Code Signing PCA 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "NotBefore": "15.12.2020 22:24:20",
-      "NotAfter": "02.12.2021 22:24:20",
-      "DigestAlgorithmName": "SHA256",
-      "Thumbprint": "E8C15B4C98AD91E051EE5AF5F524A8729050B2A2",
-      "TimestampSignatures": [
-        {
-          "Subject": "CN=Microsoft Time-Stamp Service, OU=Thales TSS ESN:3BBD-E338-E9A1, OU=Microsoft America Operations, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-          "Issuer": "CN=Microsoft Time-Stamp PCA 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-          "NotBefore": "12.11.2020 19:26:02",
-          "NotAfter": "11.02.2022 19:26:02",
-          "DigestAlgorithmName": "SHA256",
-          "Thumbprint": "E8220CE2AAD2073A9C8CD78752775E29782AABE8",
-          "Timestamp": "15.06.2021 00:39:50 +02:00"
-        }
-      ]
-    },
-    {
-      "Subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "Issuer": "CN=Microsoft Code Signing PCA 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-      "NotBefore": "15.12.2020 22:31:47",
-      "NotAfter": "02.12.2021 22:31:47",
-      "DigestAlgorithmName": "SHA256",
-      "Thumbprint": "C774204049D25D30AF9AC2F116B3C1FB88EE00A4",
-      "TimestampSignatures": [
-        {
-          "Subject": "CN=Microsoft Time-Stamp Service, OU=Thales TSS ESN:F87A-E374-D7B9, OU=Microsoft Operations Puerto Rico, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-          "Issuer": "CN=Microsoft Time-Stamp PCA 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-          "NotBefore": "14.01.2021 20:02:23",
-          "NotAfter": "11.04.2022 21:02:23",
-          "DigestAlgorithmName": "SHA256",
-          "Thumbprint": "ED2C601EDD49DD2A934D2AB32DCACC19940161EF",
-          "Timestamp": "15.06.2021 00:39:53 +02:00"
-        }
-      ]
-    }
-  ],
+  "Signed": "Not signed",
+  "AuthenticodeHash": "",
+  "Signatures": [],
+  "isParent": false,
   "ParentProcess": {
     "EventGuid": null,
-    "StartTime": "2021-07-11T09:54:28.9558001+02:00",
+    "StartTime": "2021-12-29T12:22:13.6175162+01:00",
     "QEventID": 100,
     "QType": "Process Create",
-    "Username": "TEST-OS\\TESTUSER",
+    "Username": "TESTPC\\TestUser",
+    "UsernameSID": "S-1-5-21-2182592019-244663482-1304351222-1001",
     "Imagefilename": "",
     "KernelImagefilename": "",
-    "OriginalFilename": "TEAMS.EXE",
-    "Fullpath": "C:\\Users\\TESTUSER\\AppData\\Local\\Microsoft\\Teams\\current\\Teams.exe",
-    "PID": 16232,
-    "Commandline": "C:\\Users\\TESTUSER\\AppData\\Local\\Microsoft\\Teams\\current\\Teams.exe ",
-    "Modulecount": 162,
+    "OriginalFilename": "EXPLORER.EXE",
+    "Fullpath": "C:\\WINDOWS\\Explorer.EXE",
+    "PID": 7008,
+    "Commandline": "C:\\WINDOWS\\Explorer.EXE ",
+    "Modulecount": 356,
     "TTPHash": "",
-    "Imphash": "F14F00FA1D4C82B933279C1A28957252",
-    "sha256": "155625190ECAA90E596CB258A07382184DB738F6EDB626FEE4B9652FA4EC1CC2",
-    "md5": "9453BC2A9CC489505320312F4E6EC21E",
-    "sha1": "7219CB54AC535BA55BC1B202335A6291FDC2D76E",
+    "Imphash": "0DA09DC956F7D38FFB8EE50CCBA217BF",
+    "sha256": "4C1D9F1CB41545DD46430130FC3F0E15665BD1948942B0B85410305DAA7AAA9C",
+    "md5": "3F786F7D200D0530757B91C5C80BC049",
+    "sha1": "FF02A95A759C1880FC580158062D43FDF3B85739",
     "ProcessIntegrityLevel": "Medium",
     "isOndisk": true,
     "isRunning": true,
     "Signed": "Signature valid",
-    "AuthenticodeHash": "B8AD58EE5C35B3F80C026A318EEA34BABF6609C077CB3D45AEE69BF5C9CF8E11",
+    "AuthenticodeHash": "CD0E17F28F486759625C30A95E78BBC4BC0A3B697AF83B3E1C09267CAEEA51B3",
     "Signatures": [
       {
-        "Subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-        "Issuer": "CN=Microsoft Code Signing PCA 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-        "NotBefore": "15.12.2020 22:24:20",
-        "NotAfter": "02.12.2021 22:24:20",
+        "Subject": "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+        "Issuer": "CN=Microsoft Windows Production PCA 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+        "NotBefore": "15.12.2020 22:29:13",
+        "NotAfter": "02.12.2021 22:29:13",
         "DigestAlgorithmName": "SHA256",
-        "Thumbprint": "E8C15B4C98AD91E051EE5AF5F524A8729050B2A2",
+        "Thumbprint": "F7C2F2C96A328C13CDA8CDB57B715BDEA2CBD1D9",
         "TimestampSignatures": [
           {
-            "Subject": "CN=Microsoft Time-Stamp Service, OU=Thales TSS ESN:3BBD-E338-E9A1, OU=Microsoft America Operations, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+            "Subject": "CN=Microsoft Time-Stamp Service, OU=Thales TSS ESN:462F-E319-3F20, OU=Microsoft Operations Puerto Rico, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
             "Issuer": "CN=Microsoft Time-Stamp PCA 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-            "NotBefore": "12.11.2020 19:26:02",
-            "NotAfter": "11.02.2022 19:26:02",
+            "NotBefore": "14.01.2021 20:02:14",
+            "NotAfter": "11.04.2022 21:02:14",
             "DigestAlgorithmName": "SHA256",
-            "Thumbprint": "E8220CE2AAD2073A9C8CD78752775E29782AABE8",
-            "Timestamp": "15.06.2021 00:39:50 +02:00"
-          }
-        ]
-      },
-      {
-        "Subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-        "Issuer": "CN=Microsoft Code Signing PCA 2011, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-        "NotBefore": "15.12.2020 22:31:47",
-        "NotAfter": "02.12.2021 22:31:47",
-        "DigestAlgorithmName": "SHA256",
-        "Thumbprint": "C774204049D25D30AF9AC2F116B3C1FB88EE00A4",
-        "TimestampSignatures": [
-          {
-            "Subject": "CN=Microsoft Time-Stamp Service, OU=Thales TSS ESN:F87A-E374-D7B9, OU=Microsoft Operations Puerto Rico, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-            "Issuer": "CN=Microsoft Time-Stamp PCA 2010, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
-            "NotBefore": "14.01.2021 20:02:23",
-            "NotAfter": "11.04.2022 21:02:23",
-            "DigestAlgorithmName": "SHA256",
-            "Thumbprint": "ED2C601EDD49DD2A934D2AB32DCACC19940161EF",
-            "Timestamp": "15.06.2021 00:39:53 +02:00"
+            "Thumbprint": "A9C92B731AE7D10B21A6EA338E9FA5F8349F34BF",
+            "Timestamp": "29.07.2021 11:39:24 +02:00"
           }
         ]
       }
     ],
+    "isParent": false,
     "ParentProcess": null
   }
 }
