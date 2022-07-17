@@ -27,11 +27,6 @@ qlog.exe -i
 #deinstall service
 qlog.exe -u 
 ```
-
-
-# Do you want to contribute?
-Please see https://threathunters.io/ on how to join threathunters.io community.
-
 # Example output of enriched PROCESS CREATE events
 ```
 {
