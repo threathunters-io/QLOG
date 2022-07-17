@@ -1,5 +1,5 @@
 # Update July, 2022
-We started QLOG as an experiment to learn more about Windows ETW. QLOG provides enriched Logging for process creation events on Windows. We have stopped development of QLOG because in the meantime tools were published which use ETW for telemetry and do a way better job than QLOG. Curious? Have a look a [Aurora Agent from Nextron](https://www.nextron-systems.com/aurora/).
+We started QLOG as an experiment to learn more about Windows ETW. QLOG provides enriched Logging for process creation events on Windows. We have stopped development of QLOG because in the meantime free tools were published which use ETW for telemetry and do a way better job than QLOG. Curious? Have a look a [Aurora Agent from Nextron](https://www.nextron-systems.com/aurora/).
 
 
 # What is Qlog
