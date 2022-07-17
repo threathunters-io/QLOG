@@ -1,27 +1,16 @@
+# Update July, 2022
+We started QLOG as an experiment to learn more about Windows ETW. QLOG provides enriched Logging for process creation events on Windows. We have stopped development of QLOG because in the meantime tools were published which use ETW for telemetry and do a way better job than QLOG. Curious? Have a look a [Aurora Agent from Nextron](https://www.nextron-systems.com/aurora/).
+
+
 # What is Qlog
-QLOG provides enriched Event Logging for security related events on Windows based systems.
-It is under heavy development and currently in alpha state. QLOG doesn’t use API hooks and it doesn’t 
-require a driver to be installed on the target system, QLOG only uses ETW to retrieve its telemetry. 
-Currently QLOG supports “process create” events only, but other enriched events will follow soon. 
-QLOG runs as a Windows Services, but can also run in console mode, if you want to stream the enriched events to console directly.
+QLOG doesn’t use API hooks and it doesn’t require a driver to be installed on the target system, QLOG only uses ETW to retrieve its telemetry. Currently QLOG supports “process create” events only. QLOG runs as a Windows Services, but can also run in console mode, if you want to stream the enriched events to console directly.
 
 # How does it work
 QLOG reads from ETW, enriches events and writes enriched events to Event Channel “QLOG”. 
 It creates and uses a new event source named “QMonitor” to write to Windows Eventlog.
 
-Here is sequence of event processing:
-* Create ETW session & Subscribe to relevant kernel and userland ETW providers
-* Read Events from ETW providers
-* Enrich Events
-* Write enriched events to eventlog channel QLOG
-
 # Development & License
 QLOG is being developed by threathunters.io community and will be open sourced once it reaches production grade maturity.
-
-# Why we created QLOG?
-Sysmon does a great job, but we wanted to create a tool which is open source and doesn't require drivers to be installed on target systems. 
-Also, Sysmon is NOT SUPPORTED by Microsoft at all. So, if you run into problems in prod, you're at your own. Sure, QLOG doesn't have support either, 
-but it will be open sourced so we can fix issues with the power of the security community and develop new features based on the requirements of the community.
 
 # Usage & install
 QLOG requires .NET Framework >=4.7.2 to be installed.
